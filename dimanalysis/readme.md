@@ -6,6 +6,18 @@ We present an investigation into the fractal dimension of the Dutch Meshcore net
 
 The physical network is two dimensional as the earth is locally flat in the Netherlands [citation needed]. Nodes with a high number of direct neigbors give rise to local pockets of high dimensionality, which can cause congestion issues.
 
+For an idealized physical deployment in the Netherlands, the network is expected to behave approximately as a **two-dimensional system**, since nodes are distributed over a geographically flat area. However, the logical structure of the mesh network can deviate significantly from this:
+
+-   Nodes with many neighbors create **locally dense clusters**
+-   These clusters introduce **higher effective dimensionality**
+-   Increased dimensionality leads to **faster message branching**
+
+This has direct implications for flood-based message propagation:
+
+-   Higher dimensionality increases **redundancy and propagation speed**
+-   However, it also increases **network load and congestion risk**
+-   In extreme cases, message propagation can outpace the network’s capacity to handle transmissions efficiently
+
 ## Source data
 
 We use link data retrieved from mc-radar [2](https://mc-radar.woodwar.com/). A sample is provided in [this sample file](./sample-links.json). This file contains records for links with the following data:
@@ -26,7 +38,103 @@ We use link data retrieved from mc-radar [2](https://mc-radar.woodwar.com/). A s
 
 We then filter the data by a threshold for the confidence score. Various thresholds were tested to gain some insight in the variability.
 
+## preliminary results
+
+Looking at confidence threshold 70
+
+| Confidence threshold | Min box | Max box | Fit b     | Fit a    | Fit R^2  | Dimension |
+| -------------------- | ------- | ------- | --------- | -------- | -------- | --------- |
+| 70                   | 2       | -       | -3.067132 | 9.030946 | 0.976930 | 3.067132  |
+| 70                   | 2       | 8       | -3.350582 | 9.436303 | 0.948451 | 3.350582  |
+
+## discussion
+
+The Dutch network seems to have a high global dimension of about 3. Locally even higher. This can become a problem for flood networks.
+
+## Script parameters
+
+### `--file <path>`
+
+Input JSON file with link data.
+
+-   Default: `proven-links.json`
+-   Larger files increase runtime significantly
+
+---
+
+### `--confidence <n>`
+
+Minimum confidence required for a link to be included.
+
+-   Default: `70`
+-   Higher:
+
+    -   fewer edges
+    -   faster
+    -   more reliable topology
+
+-   Lower:
+
+    -   more edges
+    -   slower
+    -   more noise
+
+---
+
+### `--component <all | giant>`
+
+Which part of the graph to analyze.
+
+-   Default: `giant`
+-   `giant`: only largest connected component (recommended, faster, more meaningful)
+-   `all`: includes all components (slower, can skew results)
+
+---
+
+### `--min-box <n>`
+
+Minimum box size (`lB`) to evaluate.
+
+-   Default: `2`
+-   Recommended: `2`
+-   Very small values are usually not informative
+
+---
+
+### `--max-box <n>`
+
+Maximum box size (`lB`) to evaluate.
+
+-   Default: null (graph diameter)
+-   Lower values:
+
+    -   faster
+    -   focus on useful scaling region
+
+-   Higher values:
+    -   slower
+    -   eventually collapse to trivial result (`N_B ≈ 1`)
+
+---
+
+### `--verbose`
+
+Enable extra logging.
+
+-   Default: off
+-   No effect on results
+
+---
+
+## Quick recommendation
+
+For most cases:
+
+```bash
+--confidence 70 --component giant --min-box 2 --max-box 8
+```
+
 # References
 
-1: <https://en.wikipedia.org/wiki/Fractal_dimension_on_networks>
-2: <https://mc-radar.woodwar.com/>
+-   1: <https://en.wikipedia.org/wiki/Fractal_dimension_on_networks>
+-   2: <https://mc-radar.woodwar.com/>
