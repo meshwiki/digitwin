@@ -18,6 +18,11 @@ This has direct implications for flood-based message propagation:
 -   However, it also increases **network load and congestion risk**
 -   In extreme cases, message propagation can outpace the network’s capacity to handle transmissions efficiently
 
+## Further reading:
+
+-   [The Broadcast Storm Problem in a Mobile Ad Hoc Network - SY Ni, YC Tseng, YS Chen, JP Sheu 2002](https://www.csie.ntpu.edu.tw/~yschen/mypapers/winet2002.pdf)
+-   [BROADCAST STORM MITIGATION TECHNIQUES IN VEHICULAR AD HOC NETWORKS - N WISITPONGPHAN, OK TONGUZ 2007](https://ashikur.buet.ac.bd/CSE6811/BroadcastStormVANET.pdf)
+
 ## Source data
 
 We use link data retrieved from mc-radar [2](https://mc-radar.woodwar.com/). A sample is provided in [this sample file](./sample-links.json). This file contains records for links with the following data:
