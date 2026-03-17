@@ -1,5 +1,7 @@
 # MeshCore Digital Twin, Project Primer
 
+**Note**: We are looking for volunteers to help with this project, see [our recruitment document](./recruitment.md)
+
 ## Purpose
 
 The MeshCore network is a decentralized mesh communication system where repeaters relay messages across a dynamic, partially observable topology. Understanding how messages propagate through this network — and how configuration changes affect performance — is difficult to evaluate in the real world alone.
@@ -8,11 +10,11 @@ The **MeshCore Digital Twin** project aims to create a **simulation model of the
 
 This digital twin will allow us to:
 
-- Reconstruct and approximate the **current state of the MeshCore network**
-- Analyze **message propagation patterns**
-- Test **configuration changes and protocol strategies**
-- Evaluate **network resilience and coverage**
-- Inform improvements to repeater configuration and deployment strategies
+-   Reconstruct and approximate the **current state of the MeshCore network**
+-   Analyze **message propagation patterns**
+-   Test **configuration changes and protocol strategies**
+-   Evaluate **network resilience and coverage**
+-   Inform improvements to repeater configuration and deployment strategies
 
 The model will use **observed message propagation data from the Let's Mesh observer network** to approximate the real network topology and behavior.
 
@@ -22,17 +24,17 @@ The model will use **observed message propagation data from the Let's Mesh obser
 
 Observers in the Let's Mesh network log messages that pass through them, including:
 
-- message identifiers
-- timestamps
-- propagation paths
-- nodes that relayed the message
+-   message identifiers
+-   timestamps
+-   propagation paths
+-   nodes that relayed the message
 
 While this data does not contain full configuration details of each repeater, it provides valuable insights into:
 
-- neighborhood relationships between nodes
-- propagation timing
-- message reach
-- relay patterns
+-   neighborhood relationships between nodes
+-   propagation timing
+-   message reach
+-   relay patterns
 
 By combining these observations with a simulation model, we can construct a **probabilistic representation of the network**.
 
@@ -54,10 +56,10 @@ The goal is to determine **a plausible set of repeater characteristics** that co
 
 This can be done through:
 
-- statistical inference
-- optimization against observed data
-- parameter search
-- probabilistic modeling
+-   statistical inference
+-   optimization against observed data
+-   parameter search
+-   probabilistic modeling
 
 The process is iterative:
 
@@ -78,11 +80,11 @@ Once reasonable parameter estimates exist, the digital twin can be used to simul
 
 Possible experiments include:
 
-- adjusting repeater parameters
-- testing alternative relay strategies
-- evaluating message latency and reach
-- testing repeater density and placement strategies
-- studying network resilience under node failures
+-   adjusting repeater parameters
+-   testing alternative relay strategies
+-   evaluating message latency and reach
+-   testing repeater density and placement strategies
+-   studying network resilience under node failures
 
 This stage allows the MeshCore community to **experiment safely and systematically**, generating insights that would be difficult or disruptive to test on the live network.
 
@@ -92,10 +94,10 @@ This stage allows the MeshCore community to **experiment safely and systematical
 
 The digital twin will model the network at a **behavioral level**, focusing on:
 
-- node connectivity
-- message propagation
-- relay decisions
-- transmission timing
+-   node connectivity
+-   message propagation
+-   relay decisions
+-   transmission timing
 
 The goal is not to simulate physical radio signals at the RF level, but to capture the **logical behavior of the mesh network**.
 
@@ -117,17 +119,17 @@ These parameters represent the behavior of repeaters rather than the exact firmw
 
 These parameters influence how messages physically propagate.
 
-- **Transmission range**
-  Effective communication distance between nodes.
+-   **Transmission range**
+    Effective communication distance between nodes.
 
-- **Transmit power level**
-  Influences probability of successful delivery at distance.
+-   **Transmit power level**
+    Influences probability of successful delivery at distance.
 
-- **Packet success probability**
-  Probability that a transmission succeeds given distance and conditions.
+-   **Packet success probability**
+    Probability that a transmission succeeds given distance and conditions.
 
-- **Channel congestion sensitivity**
-  Likelihood that a node defers or drops transmission due to channel activity.
+-   **Channel congestion sensitivity**
+    Likelihood that a node defers or drops transmission due to channel activity.
 
 ---
 
@@ -135,13 +137,13 @@ These parameters influence how messages physically propagate.
 
 These parameters govern how repeaters decide to forward messages.
 
-- **Relay probability**
-  Probability a node will relay a received message.
+-   **Relay probability**
+    Probability a node will relay a received message.
 
-- **Maximum relay count / hop limit**
+-   **Maximum relay count / hop limit**
 
-- **Relay delay distribution**
-  Delay before forwarding a message.
+-   **Relay delay distribution**
+    Delay before forwarding a message.
 
 ---
 
@@ -149,10 +151,10 @@ These parameters govern how repeaters decide to forward messages.
 
 These parameters affect how nodes connect and interact.
 
-- **Neighbor detection radius**
+-   **Neighbor detection radius**
 
-- **Link stability factor**
-  Probability that a link remains active over time.
+-   **Link stability factor**
+    Probability that a link remains active over time.
 
 ---
 
@@ -160,11 +162,11 @@ These parameters affect how nodes connect and interact.
 
 These parameters represent external influences on the network.
 
-- **Interference level**
+-   **Interference level**
 
-- **Terrain / urban density factor**
+-   **Terrain / urban density factor**
 
-- **Time-of-day traffic patterns**
+-   **Time-of-day traffic patterns**
 
 ---
 
@@ -172,17 +174,17 @@ These parameters represent external influences on the network.
 
 Once operational, the MeshCore digital twin will enable:
 
-- evaluation of configuration strategies before deployment
-- network coverage analysis
-- optimization of repeater placement
-- understanding of propagation bottlenecks
-- improved reliability of message delivery
+-   evaluation of configuration strategies before deployment
+-   network coverage analysis
+-   optimization of repeater placement
+-   understanding of propagation bottlenecks
+-   improved reliability of message delivery
 
 It will also provide a foundation for future work such as:
 
-- automated parameter tuning
-- network planning tools
-- visualization of real-time network health
+-   automated parameter tuning
+-   network planning tools
+-   visualization of real-time network health
 
 ---
 
