@@ -1,0 +1,156 @@
+[
+    {
+        "node_a": "A5ECFBA17524E497BE1FC1901FBBF28FD7B06D577F58CE5FAF6E84936C4E56F6",
+        "node_b": "0B46D01586B1616E0C602D86DECA9EAA1A39DCE167DC267E25BB2DCDCFE13F8A",
+        "confidence": 30,
+        "distance_km": 0.188,
+        "last_verified": "2026-03-16T08:59:25.130Z",
+        "node_a_name": "NL-LID-JCL-RPT1",
+        "node_a_location": { "latitude": 52.16091, "longitude": 4.47077 },
+        "node_b_name": "NL-LID-Zonneveld-RPT",
+        "node_b_location": { "latitude": 52.162439, "longitude": 4.469613 }
+    },
+    {
+        "node_a": "AAED3E8A97E7E5F5254AA7D923FF854A12E454603D84866DA1DDE068E969DA2D",
+        "node_b": "8E1C7A47C85A4B8590F2E01DB13DA0DDBD2BD2CE13BC6177B0928E9D5728ABBD",
+        "confidence": 30,
+        "distance_km": 4.851,
+        "last_verified": "2026-03-16T08:59:24.540Z",
+        "node_a_name": "DTIS | NL NIJ | 6525HT",
+        "node_a_location": { "latitude": 51.819314, "longitude": 5.866347 },
+        "node_b_name": "NL-MAD- RP🔋☀️",
+        "node_b_location": { "latitude": 51.77576, "longitude": 5.86414 }
+    },
+    {
+        "node_a": "51A02E42225295CB0FB37B5C031FC31BB998A1BD5196073F606DA671F60A5474",
+        "node_b": "886F933DF72B1CEF096E8BB0B38177A218E5E99E32F89270AB3B9EEC06EADC3E",
+        "confidence": 30,
+        "distance_km": 0.698,
+        "last_verified": "2026-03-16T08:59:24.229Z",
+        "node_a_name": "Prepshop Repeater",
+        "node_a_location": { "latitude": 52.07823, "longitude": 5.0557 },
+        "node_b_name": "NL-UTC-CM-Solar",
+        "node_b_location": { "latitude": 52.076552, "longitude": 5.065536 }
+    },
+    {
+        "node_a": "9999F556B66A23E6E4485C3FF3E3104497853F64341B705189DF9C919DBCDE67",
+        "node_b": "51A02E42225295CB0FB37B5C031FC31BB998A1BD5196073F606DA671F60A5474",
+        "confidence": 30,
+        "distance_km": 3.454,
+        "last_verified": "2026-03-16T08:59:24.223Z",
+        "node_a_name": "R9🍍",
+        "node_a_location": { "latitude": 52.094353, "longitude": 5.098839 },
+        "node_b_name": "Prepshop Repeater",
+        "node_b_location": { "latitude": 52.07823, "longitude": 5.0557 }
+    },
+    {
+        "node_a": "9999F556B66A23E6E4485C3FF3E3104497853F64341B705189DF9C919DBCDE67",
+        "node_b": "FA1D6C8D990C6420BBB59317582941CC72CB643FE3FDB89907E19C538DBB510E",
+        "confidence": 50,
+        "distance_km": 0.376,
+        "last_verified": "2026-03-16T08:59:24.212Z",
+        "node_a_name": "R9🍍",
+        "node_a_location": { "latitude": 52.094353, "longitude": 5.098839 },
+        "node_b_name": "NL-UTC-3531",
+        "node_b_location": { "latitude": 52.092122, "longitude": 5.094712 }
+    },
+    {
+        "node_a": "A2A0A40B1AB308C58ECF89B159127B0E099591893E4F3CB8E628457A88355ED2",
+        "node_b": "0EB0B931001B9FD17B9A5CF75E4D047AEDAF3B3B4F792830DEA1299AE77C8DE5",
+        "confidence": 30,
+        "distance_km": 4.898,
+        "last_verified": "2026-03-16T08:59:23.603Z",
+        "node_a_name": "NL-WSS-VPP",
+        "node_a_location": { "latitude": 52.149314, "longitude": 4.405726 },
+        "node_b_name": "DTIS | NL LID | 2333CR",
+        "node_b_location": { "latitude": 52.164765, "longitude": 4.472877 }
+    },
+    {
+        "node_a": "E30F8A79E0B5422190221746D28010DF678B2E10B43209580BE41D3955C8A437",
+        "node_b": "AAED3E8A97E7E5F5254AA7D923FF854A12E454603D84866DA1DDE068E969DA2D",
+        "confidence": 30,
+        "distance_km": 4.748,
+        "last_verified": "2026-03-16T08:59:22.323Z",
+        "node_a_name": "NL-RR-RPT5",
+        "node_a_location": { "latitude": 51.776666, "longitude": 5.865633 },
+        "node_b_name": "DTIS | NL NIJ | 6525HT",
+        "node_b_location": { "latitude": 51.819314, "longitude": 5.866347 }
+    },
+    {
+        "node_a": "066C2DAC7FB0217867654468743B4ADA36BB7E8A3DD284CFD36A3357FBD43EE7",
+        "node_b": "0E38DE9F989A6AC39E3C7EE1F7FF54CD299762EACFB9D050B5A1F83A9374B053",
+        "confidence": 30,
+        "distance_km": 9.431,
+        "last_verified": "2026-03-16T08:59:21.898Z",
+        "node_a_name": "UNO-RPT-001",
+        "node_a_location": { "latitude": 52.070809, "longitude": 4.52358 },
+        "node_b_name": "NL-ZH-VOB-RPRO",
+        "node_b_location": { "latitude": 52.082049, "longitude": 4.386952 }
+    },
+    {
+        "node_a": "8CA58372B377AC58E3227B61321B38CD0D55E56ECAF549E2B33910C8BAD5DBC2",
+        "node_b": "AAB213088B14B4B2F3FA5423D4D79F18BEBB224571066FC43848A51554421400",
+        "confidence": 30,
+        "distance_km": 2.133,
+        "last_verified": "2026-03-16T08:59:20.022Z",
+        "node_a_name": "NL0346-PB-X",
+        "node_a_location": { "latitude": 52.12831, "longitude": 5.02367 },
+        "node_b_name": "NL-MSS-SCHKWRTR-RP",
+        "node_b_location": { "latitude": 52.14292, "longitude": 5.04386 }
+    },
+    {
+        "node_a": "5FD466083D0FEA43F7B4E235BA3A484943997D55E237C3985B652D19F91D0808",
+        "node_b": "035543C836939634D1DBF68CE3787B42220EAAA9D2D22E4379C4CD396BD8558C",
+        "confidence": 30,
+        "distance_km": 3.784,
+        "last_verified": "2026-03-16T08:59:19.646Z",
+        "node_a_name": "Engelen base",
+        "node_a_location": { "latitude": 51.718786, "longitude": 5.271843 },
+        "node_b_name": "Paleiskwartier",
+        "node_b_location": { "latitude": 51.68605, "longitude": 5.28662 }
+    },
+    {
+        "node_a": "88B90551166FD649AFDD93B4738806B518E81E690CFDB830F5B99C758738784C",
+        "node_b": "0EB0B931001B9FD17B9A5CF75E4D047AEDAF3B3B4F792830DEA1299AE77C8DE5",
+        "confidence": 30,
+        "distance_km": 0.858,
+        "last_verified": "2026-03-16T08:59:19.098Z",
+        "node_a_name": "NL LID Vogelwijk ☀️",
+        "node_a_location": { "latitude": 52.172149, "longitude": 4.469259 },
+        "node_b_name": "DTIS | NL LID | 2333CR",
+        "node_b_location": { "latitude": 52.164765, "longitude": 4.472877 }
+    },
+    {
+        "node_a": "2BAF118FE326EAD562BF6516E3D1CB836DC03F9DF8E4CF0DB3CF2A76FDB0A46A",
+        "node_b": "ED1016D9BE3CF34468E4088EFEAB414D57BCDFFDFFF97688434E9F4C65F5F3C9",
+        "confidence": 30,
+        "distance_km": 11.096,
+        "last_verified": "2026-03-16T08:59:18.229Z",
+        "node_a_name": "DX-ALK-OBSERVER",
+        "node_a_location": { "latitude": 52.64434, "longitude": 4.761459 },
+        "node_b_name": "Oude Niedorp Repeater 1",
+        "node_b_location": { "latitude": 52.71896, "longitude": 4.870463 }
+    },
+    {
+        "node_a": "88B90551166FD649AFDD93B4738806B518E81E690CFDB830F5B99C758738784C",
+        "node_b": "0E38DE9F989A6AC39E3C7EE1F7FF54CD299762EACFB9D050B5A1F83A9374B053",
+        "confidence": 30,
+        "distance_km": 11.499,
+        "last_verified": "2026-03-16T08:59:17.455Z",
+        "node_a_name": "NL LID Vogelwijk ☀️",
+        "node_a_location": { "latitude": 52.172149, "longitude": 4.469259 },
+        "node_b_name": "NL-ZH-VOB-RPRO",
+        "node_b_location": { "latitude": 52.082049, "longitude": 4.386952 }
+    },
+    {
+        "node_a": "ECA5EA410E43EC1D00E6308E1234BA61DF79D54420B2F5F2A04011BB67BD3D6C",
+        "node_b": "D684460BBBEAC3561856CC1A3410FC0289BD31351ABAA29BE4DC2B90E2CC3792",
+        "confidence": 30,
+        "distance_km": 8.459,
+        "last_verified": "2026-03-16T08:59:16.267Z",
+        "node_a_name": "NL_Krimpen_ad_IJ_NW",
+        "node_a_location": { "latitude": 51.925556, "longitude": 4.619722 },
+        "node_b_name": "NL-RTD-HIL-JB-RPT1",
+        "node_b_location": { "latitude": 51.956099, "longitude": 4.506854 }
+    }
+]
