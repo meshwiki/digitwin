@@ -4,7 +4,7 @@
 
 ## Purpose
 
-The MeshCore network is a decentralized mesh communication system where repeaters relay messages across a dynamic, partially observable topology. Understanding how messages propagate through this network — and how configuration changes affect performance — is difficult to evaluate in the real world alone.
+The MeshCore network is a decentralized mesh communication system where repeaters relay messages across a dynamic, partially observable topology. Understanding how messages propagate through this network, and how configuration changes affect performance, is difficult to evaluate in the real world alone.
 
 The **MeshCore Digital Twin** project aims to create a **simulation model of the real MeshCore network in the Netherlands**, allowing experimentation with repeater configurations and network behavior without affecting the live network.
 
@@ -42,11 +42,11 @@ The digital twin will therefore not be an exact replica of the network, but a **
 
 ---
 
-# Two-Step Modeling Strategy
+# Two Step Modeling Strategy
 
-The project follows a two-stage approach.
+The project follows a two stage approach.
 
-## Step 1 — Repeater Parameter Estimation
+## Step 1: Repeater Parameter Estimation
 
 The first step is to infer likely repeater configuration parameters for nodes observed in the network.
 
@@ -74,7 +74,7 @@ This calibration stage produces a **parameterized digital representation of the 
 
 ---
 
-## Step 2 — Network Simulation and Experimentation
+## Step 2: Network Simulation and Experimentation
 
 Once reasonable parameter estimates exist, the digital twin can be used to simulate network behavior under different scenarios.
 
@@ -184,7 +184,7 @@ It will also provide a foundation for future work such as:
 
 -   automated parameter tuning
 -   network planning tools
--   visualization of real-time network health
+-   visualization of real time network health
 
 ---
 
@@ -196,4 +196,4 @@ Immediate next steps for the project include:
 2. Import and analyze observer propagation data.
 3. Build a baseline network topology model.
 4. Implement the repeater parameter estimation process.
-5. Validate model behavior against real-world propagation traces.
+5. Validate model behavior against real world propagation traces.
