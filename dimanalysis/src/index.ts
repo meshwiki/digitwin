@@ -234,6 +234,7 @@ function analyzeGraph(
 
 function main(): void {
     try {
+        console.time("Total execution time");
         const args = parseArgs(process.argv);
         console.log("> reading data from", args.file);
         const data = readJson(args.file);
@@ -242,6 +243,7 @@ function main(): void {
         console.log("> analyzing graph with component mode", args.component);
         const result = analyzeGraph(adj, args);
         printReport(result, args);
+        console.timeEnd("Total execution time");
     } catch (err) {
         const message = err instanceof Error ? err.message : String(err);
         console.error("Error:", message);
