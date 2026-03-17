@@ -46,7 +46,7 @@ The digital twin will therefore not be an exact replica of the network, but a **
 
 The project follows a two stage approach.
 
-## Step 1: Repeater Parameter Estimation
+## Step 1: [Repeater Parameter Estimation](./docs/1%20parameter%20estimation/readme.md)
 
 The first step is to infer likely repeater configuration parameters for nodes observed in the network.
 
@@ -74,7 +74,7 @@ This calibration stage produces a **parameterized digital representation of the 
 
 ---
 
-## Step 2: Network Simulation and Experimentation
+## Step 2: [Network Simulation and Experimentation](./docs/2%20simulation/readme.md)
 
 Once reasonable parameter estimates exist, the digital twin can be used to simulate network behavior under different scenarios.
 
