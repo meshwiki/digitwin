@@ -42,6 +42,51 @@ The digital twin will therefore not be an exact replica of the network, but a **
 
 ---
 
+# Analysis
+
+## [Fractal dimension analysis](./dimanalysis/readme.md)
+
+In addition to simulation-based modeling, the project incorporates **structural analysis of the MeshCore network topology** to better understand its large-scale behavior.
+
+One key approach is the study of the network’s **fractal dimension**, which provides a quantitative measure of how the network expands as a function of distance. In the context of mesh networks, fractal dimension captures how rapidly the number of reachable nodes grows as messages propagate outward.
+
+For an idealized physical deployment in the Netherlands, the network is expected to behave approximately as a **two-dimensional system**, since nodes are distributed over a geographically flat area. However, the logical structure of the mesh network can deviate significantly from this:
+
+-   Nodes with many neighbors create **locally dense clusters**
+-   These clusters introduce **higher effective dimensionality**
+-   Increased dimensionality leads to **faster message branching**
+
+This has direct implications for flood-based message propagation:
+
+-   Higher dimensionality increases **redundancy and propagation speed**
+-   However, it also increases **network load and congestion risk**
+-   In extreme cases, message propagation can outpace the network’s capacity to handle transmissions efficiently
+
+To analyze this behavior, we use **link-level data** derived from the MeshCore network, which describes observed connections between nodes along with:
+
+-   estimated distances
+-   confidence scores
+-   geographic positions
+
+By applying fractal dimension analysis to this data, we aim to:
+
+-   quantify how the network scales spatially
+-   identify regions of **abnormally high connectivity**
+-   detect structural inefficiencies that may impact propagation
+-   provide input and validation signals for the digital twin model
+
+This analysis complements the simulation approach in two ways:
+
+1. **Model calibration**
+   Estimated repeater parameters should produce networks with similar dimensional characteristics to the observed network.
+
+2. **Network diagnostics**
+   Fractal properties can reveal structural issues that are not immediately visible from message traces alone.
+
+Together, these insights help ensure that the digital twin not only reproduces observed behavior, but also reflects the **underlying topology and scaling properties** of the real MeshCore network.
+
+---
+
 # Two Step Modeling Strategy
 
 The project follows a two stage approach.
